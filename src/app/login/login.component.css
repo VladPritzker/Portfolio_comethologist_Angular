@@ -1,0 +1,80 @@
+/* Стили для кнопок */
+.navbar {
+  background-color: #4CAF50;
+  overflow: hidden;
+  text-align: center;
+}
+
+.navbar a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Стили для логин страницы */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px; /* Reduced width */
+  padding: 20px;
+  padding-top: -100px; /* This may not have the desired effect; consider using margin-top instead */
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.login-container form .form-group {
+  margin-bottom: 15px;
+}
+
+.login-container form label {
+  margin-bottom: 5px;
+}
+
+.login-container form input[type="text"],
+.login-container form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.login-container form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-container form button:hover {
+  background-color: #45a049;
+}
+
+/* Стили для фона страницы */
+body {
+  background-image: url('https://via.placeholder.com/1500x800'); /* Вставьте URL фона */
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}

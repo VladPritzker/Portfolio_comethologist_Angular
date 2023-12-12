@@ -1,0 +1,57 @@
+/* Стили для кнопок */
+.navbar {
+  background-color: #4CAF50;
+  overflow: hidden;
+  text-align: center;
+}
+
+.navbar a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.left-desc{
+  width: 30%; /* Устанавливаем желаемую ширину */
+  padding: 20px;
+
+  margin: 5px; /* Уменьшаем отступ */
+  margin-right: 100px;
+  margin-left: 700px;
+}
+.right-desc {
+  width: 30%; /* Устанавливаем желаемую ширину */
+  padding: 20px;
+
+  margin: 5px; /* Уменьшаем отступ */
+  margin-left: 100px;
+  margin-right: 600px;
+}
+.left-desc h2 {
+ margin-top: -10px;
+}
+
+
+/* Стили для фона страницы */
+body {
+  background-image: url('https://via.placeholder.com/1500x800'); /* Вставьте URL фона */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
