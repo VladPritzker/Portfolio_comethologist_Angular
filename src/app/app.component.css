@@ -1,57 +1,85 @@
-/* Стили для кнопок */
+/* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
 .navbar {
-  background-color: #4CAF50;
-  overflow: hidden;
+  background-color: #00bfff; /* Light Blue Color */
   text-align: center;
+  overflow: hidden;
+  transition: background-color 0.3s;
 }
 
 .navbar a {
   display: inline-block;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
+  padding: 14px 16px;
   transition: background-color 0.3s;
+  font-weight: bold;
 }
 
 .navbar a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #007acc; /* Slightly Darker Blue on Hover */
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
 }
 
+.login-button {
+  background-color: #00bfff; /* Light Blue Color */
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
 
+.login-button:hover {
+  background-color: #007acc; /* Slightly Darker Blue on Hover */
+}
+
+/* Description Section Styles */
 .description {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center align the sections */
   align-items: center;
   padding: 20px;
-  background-color: #f2f2f2;
+  background-color: #fff; /* White Background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s;
+  margin: 20px;
 }
 
-.left-desc{
-  width: 30%; /* Устанавливаем желаемую ширину */
+.left-desc, .right-desc {
+  width: 500px; /* Adjusted width to 300px */
   padding: 20px;
-
-  margin: 5px; /* Уменьшаем отступ */
-  margin-right: 100px;
-  margin-left: 700px;
-}
-.right-desc {
-  width: 30%; /* Устанавливаем желаемую ширину */
-  padding: 20px;
-
-  margin: 5px; /* Уменьшаем отступ */
-  margin-left: 100px;
-  margin-right: 600px;
-}
-.left-desc h2 {
- margin-top: -10px;
+  text-align: center; /* Center align text within sections */
 }
 
+.left-desc h2, .right-desc h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
 
-/* Стили для фона страницы */
-body {
-  background-image: url('https://via.placeholder.com/1500x800'); /* Вставьте URL фона */
-  background-size: cover;
-  background-repeat: no-repeat;
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
 }
