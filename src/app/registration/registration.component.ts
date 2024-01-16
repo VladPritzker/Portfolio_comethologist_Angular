@@ -18,6 +18,7 @@ export class RegistrationComponent {
   email = '';
   password = '';
   showSuccessMessage = false;
+  success_message = ''
   errorMessage = '';
 
   constructor(private http: HttpClient) {}
@@ -29,12 +30,18 @@ export class RegistrationComponent {
     formData.append('email', this.email);
     formData.append('password', this.password);
 
-    this.http.post('http://127.0.0.1:8000/users/', formData).subscribe(
-      () => this.showSuccessMessage = true,
-      error => {
-        console.error(error);
-        this.errorMessage = 'An error occurred during registration.';
-      }
-    );
+    this.http.post('http://127.0.0.1:8000/users/', formData, { responseType: 'text' }).subscribe(
+  (response) => {
+    this.showSuccessMessage = true;
+    this.errorMessage = ''; // Clear any previous error message
+    // Assuming the response contains the success message as plain text
+    // this.success_message = response;
+  },
+  (error) => {
+    // console.error(error);
+    this.showSuccessMessage = false; // Clear success message
+    this.errorMessage = 'An error occurred during registration.';
+  }
+);
   }
 }
