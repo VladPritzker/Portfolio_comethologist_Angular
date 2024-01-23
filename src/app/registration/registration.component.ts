@@ -34,11 +34,8 @@ export class RegistrationComponent {
   (response) => {
     this.showSuccessMessage = true;
     this.errorMessage = ''; // Clear any previous error message
-    // Assuming the response contains the success message as plain text
-    // this.success_message = response;
   },
   (error) => {
-    // console.error(error);
     this.showSuccessMessage = false; // Clear success message
     this.errorMessage = 'An error occurred during registration.';
   }

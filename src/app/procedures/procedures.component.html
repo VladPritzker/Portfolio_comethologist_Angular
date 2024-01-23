@@ -1,0 +1,11 @@
+<div *ngIf="procedures.length; else noProcedures">
+  <ul>
+    <li *ngFor="let procedure of procedures">
+      {{ procedure.procedure_name }} - ${{ procedure.procedure_price }}
+    </li>
+  </ul>
+</div>
+
+<ng-template #noProcedures>
+  <p>No procedures found.</p>
+</ng-template>

@@ -85,3 +85,30 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+
+
+/* Cart */
+
+/* Modern Link Styles */
+.modern-link {
+  display: inline-flex;
+  align-items: center;
+  background-color: #00bfff; /* Light Blue Color */
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.modern-link:hover {
+  background-color: #007acc; /* Slightly Darker Blue on Hover */
+}
+
+.modern-link i {
+  margin-left: 8px;
+}
+/* Cart */
