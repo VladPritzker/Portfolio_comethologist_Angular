@@ -1,0 +1,22 @@
+/* procedures.component.css */
+
+.procedure-list {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.procedure-item {
+  list-style-type: none;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.procedure-item:hover {
+  background-color: #e0e0e0;
+}

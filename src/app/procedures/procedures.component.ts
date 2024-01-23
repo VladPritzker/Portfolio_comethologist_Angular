@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { CommonModule } from '@angular/common'; // Import CommonModule
+
 
 // Integrated Procedure model
 export interface Procedure {
@@ -12,7 +14,11 @@ export interface Procedure {
 @Component({
   selector: 'app-procedures',
   templateUrl: './procedures.component.html',
-  styleUrls: ['./procedures.component.css']
+  styleUrls: ['./procedures.component.css'],
+  standalone: true,
+  imports: [
+    CommonModule // Add CommonModule to the imports array
+  ]
 })
 export class ProceduresComponent implements OnInit {
   procedures: Procedure[] = [];

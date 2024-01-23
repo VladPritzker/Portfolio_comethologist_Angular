@@ -1,6 +1,6 @@
-<div *ngIf="procedures.length; else noProcedures">
+<div *ngIf="procedures.length; else noProcedures" class="procedure-list">
   <ul>
-    <li *ngFor="let procedure of procedures">
+    <li *ngFor="let procedure of procedures" class="procedure-item">
       {{ procedure.procedure_name }} - ${{ procedure.procedure_price }}
     </li>
   </ul>
