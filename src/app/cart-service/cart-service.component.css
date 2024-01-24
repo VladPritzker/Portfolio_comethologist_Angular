@@ -1,0 +1,46 @@
+/* cart.component.css */
+
+.cart-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%; /* Adjust the width of the cart */
+  margin: 0 auto; /* Center the cart on the page */
+}
+
+.cart-items ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex; /* Use Flexbox */
+  justify-content: space-between; /* Space between content and remove button */
+  align-items: center; /* Align items vertically */
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.cart-item:hover {
+  background-color: #e0e0e0;
+}
+
+/* You can add styles for a remove button if you have one */
+.cart-item button {
+  background-color: #f44336; /* Red background for remove button */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+  background-color: #d32f2f; /* Darker shade of red */
+}

@@ -1,0 +1,16 @@
+<!-- cart.component.html -->
+
+<div class="cart-container">
+  <h2>Your Cart</h2>
+  <div *ngIf="cartItems.length; else emptyCart" class="cart-items">
+    <ul>
+      <li *ngFor="let item of cartItems">
+        {{ item.procedure_name }} - ${{ item.procedure_price }}
+      </li>
+    </ul>
+  </div>
+
+  <ng-template #emptyCart>
+    <p>Your cart is empty.</p>
+  </ng-template>
+</div>

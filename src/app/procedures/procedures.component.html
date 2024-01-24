@@ -1,7 +1,7 @@
 <div *ngIf="procedures.length; else noProcedures" class="procedure-list">
   <ul>
     <li *ngFor="let procedure of procedures" class="procedure-item">
-      {{ procedure.procedure_name }} - ${{ procedure.procedure_price }}
+      {{ procedure.procedure_name }} - ${{ procedure.procedure_price }} <button (click)="addToCart(procedure)">Add to Cart</button>
     </li>
   </ul>
 </div>
